@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+
+:root{
+    --color-black-matte: #1c1d25;
+    --color-buttom-aquamarine: aquamarine;
+}
+
+
+body{
+   
+    font-family: 'Poppins' ,sans-serif;
+}
+
+section{
+    border: solid black 1px; 
+}
+
+.main{
+    height: 100vh;
+    color: white;
+    font-size: 16pt;
+    background-color: var(--color-black-matte);
+}
+
+.main nav{
+    width: 100%;
+}
+
+
+.main nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 13pt;
+    justify-content: space-around;
+}
+
+.main nav ul li{
+    width: 7rem;
+    text-decoration: none;
+}
+
+.text-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+h1{
+    font-size: 40pt;
+}
+
+p{
+  font-size: 20pt;
+  font-weight: 300;
+}
+
+.text{
+   padding: 10rem 0 7rem 4rem;
+}
+
+.buttom{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    
+    background-color: aqua;
+    height: 3rem;
+    width: 10rem;
+    
+    align-items: center;
+    border-radius: 40px;
+}
+
+
+.buttom:hover{
+    background-color:var(--color-buttom-aquamarine);
+}
+
+.buttom:active{
+    background-color:white;
+    color: black;
+}
+
+.socials{
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.socials a i:hover{
+    color: var(--color-buttom-aquamarine);
+}
+
+.socials a i{
+    color: white;
+}
+.socials a i{
+    font-size: 25pt;
+}
+
+
+.main .arrow-page{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position:relative;
+    bottom: 3rem;
+
+   
+    animation-name: arrow-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.main .arrow-page i{
+    font-size: 25pt;
+}
+
+
+@keyframes arrow-down{
+    0%{
+        bottom: 2.5rem;
+    }
+    100%{
+        bottom: 2.2rem;
+    }
+}
+
+.sub-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.information h2{
+    padding-bottom: 2rem;
+    font-size: 25pt;
+}
+
+.information p{
+  font-size: 16pt;
+  font-weight: 300;
+}
+
+.photo-me{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+
+footer{
+    height: 500px;
+    background-color: red;
+}
+
+
+
+@media (max-width: 400px){ 
+
+    .main{
+        font-size: 10pt;
+    }
+
+    .main nav{
+        position: absolute;
+    }
+
+    h1{
+        font-size: 20pt;
+    }
+    
+    p{
+      font-size: 10pt;
+      font-weight: 300;
+    }
+
+    .text{
+        padding: 0 0 0 2rem;
+     }
+     
+     .buttom{
+        height: 1.8rem;
+        width: 5.5rem;
+    }
+
+    .socials{
+        padding-top: 0rem;
+        padding-right: 2rem;
+    }
+    .socials a i{
+        font-size: 20pt;
+    }
+   
+    .information h2{
+        padding-bottom: 1rem;
+        font-size: 16pt;
+    }
+
+    .information p{
+      font-size: 10pt;
+      font-weight: 300;
+    }
+
+    .area-photo{
+        display: flex;
+        align-items: center;
+    }
+    .photo-me{
+
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+    }
+
+
+    .sub-section{
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+}
+
