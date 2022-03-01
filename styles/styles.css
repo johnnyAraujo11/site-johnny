@@ -13,7 +13,7 @@ html, body{
 
 
 :root{
-    --color-black-matte: #1c1d25;
+    --color-black-matte: #060D0F;
     --color-buttom-aquamarine: aquamarine;
 }
 
@@ -27,6 +27,9 @@ section{
 }
 
 .main{
+    display: flex;
+    flex-direction: column;
+
     height: 100vh;
     color: white;
     font-size: 16pt;
@@ -115,14 +118,13 @@ p{
 
 .main .arrow-page{
     display: flex;
-
+    color: white;
     align-items: center;
     justify-content: center;
 
     position:relative;
-    bottom: 3rem;
-
    
+    
     animation-name: arrow-down;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -138,24 +140,28 @@ p{
 
 @keyframes arrow-down{
     0%{
-        bottom: 2.5rem;
+        bottom: 1rem;
     }
     100%{
-        bottom: 2.2rem;
+        bottom: 0rem;
     }
+}
+
+.sub-section, .sub-section-cards{
+    background-color: #F1F7F9;
+    display: flex;
+    padding: 3rem 4rem 4rem 4rem;
 }
 
 .sub-section{
-    display: flex;
     justify-content: space-between;
-    padding: 4rem;
+    
 }
 
 .sub-section-cards{
-    display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 4rem;
+  
 }
 
 .information h2, .sub-section-cards h2 {
@@ -174,16 +180,13 @@ p{
     border-radius: 50%;
 }
 
-
-.all-cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*Sections Projects*/
 
 .all-cards{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
 }
 
 .all-cards a{
@@ -194,21 +197,51 @@ p{
     padding: 2px;
 }
 
+.project-card{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1rem 0 .4rem 0;
+    align-items:center;
+    justify-content:space-between;
+    width: 15rem;
+    height: 20rem;
+    
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px gray; 
+}
+
+.project-card p{
+    align-items:stretch;
+    font-size: 10pt;
+    font-weight: 400;
+}
+
+.project-card hr{
+    width: 85%;
+    background-color: black;
+}
 .all-cards img {
-    margin-top: 1rem;
-    width: 10rem;
-    height: 10rem; 
+    width: 8rem;
+    height: 8rem; 
 
     border-radius: 50%;
 }
 
-
-.project-card{
-    width: 15rem;
-    height: 20rem;
-    border-radius: 30px;
-    box-shadow: 5px 5px 20px gray; 
+.all-cards .card-buttons{
+    display: flex;
+    column-gap: 2rem;
 }
+
+.all-cards .card-buttons div{
+    background-color: #3C7790;
+    padding: 0.5rem;
+
+    font-size: 10pt;
+
+    border-radius: 1.5rem;
+}
+
 
 
 footer{
@@ -217,6 +250,8 @@ footer{
 }
 
 
+
+/*Responsive*/
 
 @media (max-width: 400px){ 
 
@@ -288,8 +323,17 @@ footer{
         flex-direction: column;
     }
 
-    .all-cards div:nth-child(n+2){
+    .all-cards .project-card:nth-child(n+2){
         margin-top: 2rem;
+    }
+
+    .all-cards .card-buttons div{
+        background-color: #3C7790;
+        
+    
+        font-size: 10pt;
+    
+        border-radius: 1.5rem;
     }
 }
 
