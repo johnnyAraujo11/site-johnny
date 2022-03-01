@@ -53,6 +53,11 @@ section{
     text-decoration: none;
 }
 
+.main nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
 .text-area{
     display: flex;
     align-items: center;
@@ -90,7 +95,10 @@ p{
 
 
 .buttom:hover{
+    cursor: pointer;
+
     background-color:var(--color-buttom-aquamarine);
+    transition-duration: 0.5s;
 }
 
 .buttom:active{
@@ -233,9 +241,18 @@ p{
     column-gap: 2rem;
 }
 
-.all-cards .card-buttons div{
+.all-cards .card-buttons a:hover{
+    cursor: pointer;
+
+    background-color: #7EB2C9;
+    transition-duration: 0.3s; 
+}
+
+
+.all-cards .card-buttons a{
+    color: black;
     background-color: #3C7790;
-    padding: 0.5rem;
+    padding: 0.3rem;
 
     font-size: 10pt;
 
@@ -245,10 +262,20 @@ p{
 
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 500px;
-    background-color: red;
+    background-color: #0C181D;
 }
 
+footer form{
+    display: flex;
+    flex-direction: column;   
+
+    row-gap: 1rem;
+}
 
 
 /*Responsive*/
@@ -327,10 +354,9 @@ footer{
         margin-top: 2rem;
     }
 
-    .all-cards .card-buttons div{
+    .all-cards .card-buttons a{
         background-color: #3C7790;
         
-    
         font-size: 10pt;
     
         border-radius: 1.5rem;

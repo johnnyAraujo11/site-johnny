@@ -14,10 +14,10 @@
     <section class="main"> 
         <nav>
             <ul>
-                <li>Sobre mim</li>
-                <li>Estudos</li>
-                <li>Projetos</li>
-                <li>Contatos</li>
+                <li><a href="#about-me">Sobre mim</a> </li>
+                <li><a href="#">Estudos</a></li>
+                <li><a href="#projects"> Projetos</a></li>
+                <li><a href="#">Contatos</a> </li>
             </ul>
         </nav>
         <div class="text-area">
@@ -38,7 +38,7 @@
 
     </section>
     
-    <section class="sub-section">
+    <section id="about-me"class="sub-section">
         <div class="information">
             <h2>Sobre mim</h2>
             <p>Olá. Meu nome é Johnny. Estou estudando para me tornar um cientista de dados. 
@@ -51,7 +51,7 @@
         </div>
     </section>
 
-    <section class="sub-section-cards">
+    <section id="projects" class="sub-section-cards">
         <h2>Projetos</h2>
         <div class="all-cards">
             <div class="project-card">
@@ -60,8 +60,8 @@
                 <p>Projeto de progrmação em java script. Utilizando html, css e js. </p>
                 <hr>
                 <div class="card-buttons">
-                    <div>Demo</div>
-                    <div>Github</div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Demo</a> 
+                    <a href="http://" target="_blank" rel="noopener noreferrer"> Github</a>
                 </div>
                 
             </div>
@@ -71,8 +71,8 @@
                 <p>My project about</p>
                 <hr>
                 <div class="card-buttons">
-                    <div>Demo</div>
-                    <div>Github</div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Demo</a> 
+                    <a href="http://" target="_blank" rel="noopener noreferrer"> Github</a>
                 </div>
 
             </div>
@@ -82,8 +82,8 @@
                 <p>My project about</p>
                 <hr>
                 <div class="card-buttons">
-                    <div>Demo</div>
-                    <div>Github</div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Demo</a> 
+                    <a href="http://" target="_blank" rel="noopener noreferrer"> Github</a>
                 </div>
 
             </div>
@@ -93,14 +93,29 @@
                 <p>My project about</p>
                 <hr>
                 <div class="card-buttons">
-                    <div>Demo</div>
-                    <div>Github</div>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Demo</a> 
+                    <a href="http://" target="_blank" rel="noopener noreferrer"> Github</a>
                 </div>
 
             </div>
         </div>
     </section>
-    <footer></footer> 
+    <footer>
+        <div>
+            <form action="" method="post">
+                <label for="">Your name:
+                    <input type="text">
+                </label>
+    
+                <label>Your e-mai:
+                    <input type="email" name="" id="">
+                </label>
+                <label for=""> Menssage:
+                    <textarea name="msg" id="" cols="40" rows="15"></textarea>
+                </label>
+            </form>
+        </div>
+    </footer> 
 
     <script type="module" src="../scripts/script.js"></script>
 </body>
